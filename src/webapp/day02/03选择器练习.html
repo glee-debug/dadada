@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小练习</title>
+    <style>
+        #g1{
+            color: red;
+        }
+        .c1{
+            color: green;
+        }
+        h3{
+            color: yellow;
+        }
+        /*分组选择器*/
+        #g1,h2,h3{
+            background-color: pink;
+        }
+        /*任意元素选择器*/
+        *{
+            border: 1px solid red;
+        }
+        /*属性选择器*/
+        input[type ="password"]{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="c1">刘德华</div><div>张学友</div><div id="g1">郭富城</div>
+
+<span class="c1">苹果</span><span>香蕉</span><span>橙子</span>
+
+<h2>电视</h2><h2 class="c1">手机</h2>
+
+<h3>空调</h3>
+<input type="text">
+<input type="password">
+
+</body>
+</html>

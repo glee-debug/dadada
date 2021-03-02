@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+<center>
+    <form action="http://www.tmooc.cn">
+        <table>
+            <tr colspan="2"><h1>欢迎注册</h1></tr>
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" name="username" placeholder="占位文本 有文字就不显示"></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" name="password" placeholder="请输入密码" ></td>
+            </tr>
+            <tr>
+                <td>电话：</td>
+                <td><input type="text" name="telphone" maxlength="11" value="设置默认值" ></td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="radio" name="gender" value="male" checked="checked" id="r1"><label for="r1">男</label>
+                    <input type="radio" name="gender" value="female" id="r2"><label for="r2">女</label>
+                    <u>单选框必须写相同的name建立好关系 </u>
+                </td>
+            </tr>
+            <tr>
+                <td>爱好：</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="smoke" id="c1"><label for="c1">抽烟</label>
+                    <input type="checkbox" name="hobby" value="drink" id="c2"><label for="c2">喝酒</label>
+                    <input type="checkbox" name="hobby" value="perm" id="c3"><label for="c3">烫头</label>
+                    <u>复选框也需要添加相同name label标签用于扩充点击范围</u>
+                </td>
+            </tr>
+            <tr>
+                <td>生日:</td>
+                <td><input type="date" name="birthday">日期选择器</td>
+            </tr>
+            <tr>
+                <td>附件上传:</td>
+                <td><input type="file" name="picture"> 上传靓照</td>
+            </tr>
+            <tr>
+                <td>城市</td>
+                <td>
+                    <select name="city">
+                        <option value="beijing">北京</option>
+                        <option value="shanghai"  selected="selected">上海</option>
+                        <option value="guangzhou">广州</option>
+                        <option value="shenzhen">深圳</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <textarea name="introduction" cols="30" rows="10" placeholder="自我介绍：我叫小袁 我是个傻子"></textarea><br>
+        <input type="submit" value="注册">
+        <input type="reset" value="重置">
+        <input type="button" value="按钮">
+    </form>
+</center><hr>
+<center>
+    <form action="http://www.tmooc.cn">
+        <table>
+            <tr colspan="2"><h1>欢迎注册</h1></tr>
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" name="username" placeholder="请输入用户名"></td>
+            </tr>
+            <tr>
+                <td>用户名：</td>
+                <td><input type="password" name="password" placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="radio" name="gender" id="g1" value="male" checked="checked" ><label for="g1">男</label>
+                    <input type="radio" name="gender" id="g2" value="female"><label for="g2">女</label>
+                </td>
+            </tr>
+            <tr>
+                <td>爱好：</td>
+                <td>
+                    <input type="checkbox" name="hobby" value="smoke" id="h1"><label for="h1">吸烟</label>
+                    <input type="checkbox" name="hobby" value="drink" id="h2"><label for="h2">喝酒</label>
+                    <input type="checkbox" name="hobby" value="perm" id="h3"><label for="h3">烫头</label>
+                </td>
+            </tr>
+            <tr>
+                <td>生日：</td>
+                <td><input type="date" name="birthday"></td>
+            </tr>
+            <tr>
+                <td>上传靓照：</td>
+                <td><input type="file" name="birthday"></td>
+            </tr>
+            <tr>
+                <td>城市：</td>
+                <td>
+                    <select>
+                        <option value="beijing">北京</option>
+                        <option value="shanghai" selected="selected">上海</option>
+                        <option value="guangzhou">广州</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <textarea name="introduction" id="intro" cols="30" rows="10" placeholder="自我介绍"></textarea><br>
+        <input type="submit" value="注册">
+        <input type="reset" value="重置">
+        <input type="button" value="按钮">
+    </form>
+</center>
+</body>
+</html>

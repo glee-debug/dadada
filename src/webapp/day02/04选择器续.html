@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*子孙后代选择器 345*/
+        body div div span{
+            color: red;
+        }
+        /*  子元素选择器 */
+        body>div>div>span{
+            color: green;
+        }
+        /*伪类选择器*/
+        /*未访问状态*/
+        a:link{
+            color: blue;
+        }
+        /*访问过状态*/
+        a:visited{
+            color: red;
+        }
+        /*悬停状态*/
+        a:hover{
+            color: green;
+        }
+        /*点击状态*/
+        a:active{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<a href="../homework/s1.jpg">1</a>
+<a href="../homework/s3.jpg">2</a>
+<a href="../homework/banner.jpg">3</a>
+<span>s1</span>
+<div>
+    <span>s2</span>
+    <div><span>s3</span></div>
+    <div>
+        <span>s4</span>
+        <div><span>s5</span></div>
+    </div>
+</div>
+</body>
+</html>

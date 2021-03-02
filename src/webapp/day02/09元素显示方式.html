@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素显示方式</title>
+    <style>
+        div{
+            width: 100px;
+            height: 50px;
+            border: 1px solid red;
+        }
+        span{
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            display: inline;/*默认值inline 无法修改宽高*/
+            display: block;/*行内元素 修改成块级元素或行内块 就可以修改宽高*/
+            display: inline-block;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div>块级元素 独占一行</div>
+<div>块级元素 可以修改宽高</div>
+<div>如h1-h6,p,div </div>
+<span>行内元素 共占一行</span><span>行内元素 不能修改宽高</span><span></span><br>
+<img src="xy.jpg" alt="行内块">
+<img src="xy.jpg" alt="可以修改宽高">
+<img src="xy.jpg" alt="小袁">
+</body>
+</html>

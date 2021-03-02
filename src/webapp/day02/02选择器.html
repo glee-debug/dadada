@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02选择器</title>
+    <style>
+        /*标签名选择器*/
+        div{
+
+        }
+        /*id选择器*/
+        #d1{
+            color: red;
+            font-size: 20pt;
+        }
+        /*class选择器*/
+        .c1{
+            color: green;
+            font-size: 30pt;
+        }
+        /*分组选择器*/
+        #d1,.c1,h3{
+            background-color: brown;
+        }
+        /*伪类选择器*/
+    </style>
+</head>
+<body>
+<div>标签名选择器</div>
+<div></div>
+<div></div>
+<div id="d1" class="c1">id选择器 用#获取id</div>
+<div>选取页面中某一个元素时使用</div>
+<div></div>
+<span class="c1">class类选择器 通过.来获取类</span>
+<span>当需要选择页面中多个不相关的元素时，给元素添加相同的class进行选取</span>
+<h3>分组选择器</h3>
+</body>
+</html>

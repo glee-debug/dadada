@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* ctrl+shift+/ 注释快捷键 */
+        /* style里的注释是这样 */
+        /* 标签名选择器：选取页面中所有同名标签*/
+        h1{
+            color: aqua;
+        }
+        h3{
+            color: antiquewhite;
+        }
+    </style>
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+<h1>css样式代码添加的三种方式</h1>
+<h1 style="">css:cascading style sheet 层叠样式表</h1>
+<h2 style="font-size: 20pt">1.内联样式：在标签内部的style属性中写样式代码</h2>
+<h3 style="font-size: 20pt">2.内部样式：在head标签中添加style标签中写样式代码</h3>
+<h3 style="font-size: 20pt">3.外部样式：在&lt;link&gt;标签引入外部css文件中</h3>
+<h3 style="color: blueviolet">优先级：内联样式>（内部样式和外部样式谁后执行谁生效）</h3>
+</body>
+</html>
