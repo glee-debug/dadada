@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框</title>
+    <style>
+        div{
+            margin-bottom: 20px;
+            margin-right: 20px;
+            float: left;
+            /*圆角 值越大越圆 超过宽高一半为正远*/
+            border-radius: 100px;
+            /*内边距会影响元素显示的宽高*/
+            padding-left: 0;
+        }
+        #d1{
+            width: 200px;
+            height: 200px;
+            border: 5px dotted red;
+        }
+        #d2{
+            width: 200px;
+            height: 200px;
+            border: 20px dashed blue;
+            /*内边距会影响元素显示的宽高*/
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+        #d3{
+            width: 200px;
+            height: 200px;
+            border: 20px solid pink;
+        }
+        #d4{
+            width: 200px;
+            height: 200px;
+            border: 20px double purple;
+        }
+        #d5{
+            width: 200px;
+            height: 200px;
+            border: 20px groove red;
+        }
+        #d6{
+            width: 200px;
+            height: 200px;
+            border: 20px ridge green;
+        }
+        #d7{
+            width: 200px;
+            height: 200px;
+            border: 20px inset yellow;
+        }
+        #d8{
+            width: 200px;
+            height: 200px;
+            border: 20px outset orange;
+        }
+    </style>
+</head>
+<body>
+<div id="d1">
+    边框测试1
+</div>
+<div id="d2">
+    边框测试2
+</div>
+<div id="d3">
+    边框测试3
+</div>
+<div id="d4">
+    边框测试4
+</div>
+<div id="d5">
+    边框测试5
+</div>
+<div id="d6">
+    边框测试6
+</div>
+<div id="d7">
+    边框测试7
+</div>
+<div id="d8">
+    边框测试8
+</div>
+</body>
+</html>
