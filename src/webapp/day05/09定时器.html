@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+</head>
+<body>
+<div id="d1" ></div>
+<script>
+    //开启定时器
+    /*方法调用时写括号 作为参数传递时不写括号*/
+    setInterval(myfn,1000);
+    let x =10;
+    function myfn() {
+        if (x > 0) {
+            d1.innerText = x--;
+            console.log("小袁是傻逼")
+        }
+    }
+    let timer = setInterval(function (){
+        console.log("对")
+        if(x==0){
+            /*停止定时器*/
+            clearTimeout(timer);
+        }
+    },1000);
+</script>
+</body>
+</html>

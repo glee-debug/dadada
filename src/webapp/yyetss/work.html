@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mac - Apple</title>
+    <style>
+        body{
+            font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+        }
+        #wrapper{
+            height: 40px;
+            width: auto;
+            background-color: #444;
+            text-align: right;
+            color: #a9a9aa;
+        }
+        #wrapper_text{
+            font-size: 12px;
+            font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            width: auto;
+            padding: 0 22px;
+            line-height: 40px;
+            text-align: right;
+            max-width: 976px;
+            margin: 0 auto;
+        }
+        #top{
+            height: 44px;
+            background-color: #1d1d1f;
+            font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0 -10px;
+            width: auto;
+            height: 44px;
+            justify-content: space-between;
+            display: flex;
+            margin: 0 100px;
+            max-width: 980px;
+        }
+        li{
+            height: 44px;
+            float: left;
+        }
+        .top_link{
+            float: left;
+            color: #f5f5f7;
+            font-size: 14px;
+            line-height: 3.14286;
+            font-weight: 400;
+            display: inline-block;
+            padding: 0 10px;
+            height: 44px;
+            font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+        }
+        #logo{
+            background-size: 16px 44px;
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com.cn/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg");
+            background-position: center center;
+            width: 16px;
+        }
+        #mac{
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com.cn/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_links_mac_image__fv4ktb435mum_large.svg");
+            background-position: center center;
+            background-origin: content-box;
+            background-size: cover;
+            width: 1.85714em;
+            max-width: 44.2px;
+        }
+        #ipad{
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com.cn/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_links_ipad_image__fefum478f4uq_large.svg");
+            background-position: center center;
+            background-origin: content-box;
+            background-size: cover;
+            width: 1.92857em;
+            max-width: 45.9px;
+        }
+        #iphone{
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com.cn/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_links_iphone_image__dhepc4hn14cy_large.svg");
+            background-position: center center;
+            background-origin: content-box;
+            background-size: cover;
+            width: 3.14286em;
+            max-width: 74.8px;
+        }
+        #watch{
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com.cn/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_links_watch_image__dfo5u4bhooqe_large.svg");
+            background-position: center center;
+            background-origin: content-box;
+            background-size: cover;
+            width: 2.85714em;
+            max-width: 68px;
+        }
+        #music{
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com.cn/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_links_music_image__bewxrazzig02_large.svg");
+            background-position: center center;
+            background-origin: content-box;
+            background-size: cover;
+            width: 2.64286em;
+            max-width: 62.9px;
+        }
+        #support{
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com.cn/ac/globalnav/6/zh_CN/images/bcb062d0-0f7f-51ad-9f75-fe0c5dd0772d/globalnav_links_support_image__b24reo1n4fbm_large.svg");
+            background-position: center center;
+            background-origin: content-box;
+            background-size: cover;
+            width: 3.28571em;
+            max-width: 78.2px;
+        }
+        #sousuo{
+            background-size: 18px 88px;
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com.cn/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__fca9mfoh8a2q_large.svg");
+            background-position: 10px 0;
+            width: 18px;
+        }
+        #shoppingbag{
+            background-size: 17px 44px;
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com.cn/ac/globalnav/6/zh_CN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_large.svg");
+            background-position: center center;
+            width: 17px;
+        }
+        #item{
+            height: 100px;
+            background-color:#141414;
+        }
+        .type_link{
+            font-size: 12px;
+            line-height: 1.33337;
+            font-weight: 400;
+            width: 71.5px;
+            height: 88px;
+        }
+        #air{
+            width: 54px;
+            height: 54px;
+            background-size: 52px 54px;
+            background-repeat: no-repeat;
+            background-image: url("https://www.apple.com.cn/v/mac/home/ba/images/familybrowser/macbookair_dark__tjyfqhu5ttmy_large.svg");
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .goodName{
+            font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+        }
+        span{
+            width: auto;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="wrapper_text">&lt;广告&gt;</div>
+</div>
+<div id="top">
+    <ul>
+        <li><a class="top_link" id="logo" href="https://www.apple.com.cn/"></a></li>
+        <li><a class="top_link" id="mac" href="https://www.apple.com.cn/mac/"></a></li>
+        <li><a class="top_link" id="ipad" href="https://www.apple.com.cn/ipad/"></a></li>
+        <li><a class="top_link" id="iphone" href="https://www.apple.com.cn/iphone/"></a></li>
+        <li><a class="top_link" id="watch" href="https://www.apple.com.cn/watch/"></a></li>
+        <li><a class="top_link" id="music" href="https://www.apple.com.cn/music/"></a></li>
+        <li><a class="top_link" id="support" href="https://support.apple.com/zh-cn"></a></li>
+        <li><a class="top_link" id="sousuo" href="https://www.apple.com.cn/search"></a></li>
+        <li><a class="top_link" id="shoppingbag" href="https://www.apple.com.cn/cn/shop/goto/bag"></a></li>
+    </ul>
+</div>
+<div id="item">
+    <ul>
+        <li><a class="type_link" href="https://www.apple.com.cn/macbook-air/">
+            <figure id="air"></figure>
+            <span class="goodName">MacBook Air</span><br>
+            <span style="color: #f56300;">新款</span>
+        </a></li>
+        <li><a class="type_link" id="pro13" href="https://www.apple.com.cn/macbook-pro-13/"></a></li>
+        <li><a class="type_link" id="pro16" href="https://www.apple.com.cn/macbook-pro-16/"></a></li>
+        <li><a class="type_link" id="imac" href="https://www.apple.com.cn/imac/"></a></li>
+        <li><a class="type_link" id="imacpro" href="https://www.apple.com.cn/imac-pro/"></a></li>
+        <li><a class="type_link" id="macpro" href="https://www.apple.com.cn/mac-pro/"></a></li>
+        <li><a class="type_link" id="mini" href="https://www.apple.com.cn/mac-mini/"></a></li>
+        <li><a class="type_link" id="compare" href="https://www.apple.com.cn/mac/compare/"></a></li>
+        <li><a class="type_link" id="xdr" href="https://www.apple.com.cn/pro-display-xdr/"></a></li>
+        <li><a class="type_link" id="accessories" href="https://www.apple.com.cn/cn/shop/goto/mac/accessories"></a></li>
+        <li><a class="type_link" id="macos" href="https://www.apple.com.cn/macos/big-sur/"></a></li>
+    </ul>
+
+</div>
+</body>
+</html>

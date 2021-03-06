@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>猜数字</title>
+</head>
+<body>
+<input type="text" id="i1" placeholder="请输入0-100的整数">
+<input type="button" value="猜一猜" onclick="guess()">
+<div id="d1"></div>
+<script>
+    let x = parseInt(Math.random()*100);
+    let i = 0;
+    function guess(){
+        alert(x);
+            if (isNaN(i1.value)) {
+                d1.innerHTML = "<h1>请输入数字</h1>";
+            } else if (parseInt(i1.value) > x) {
+                d1.innerHTML = "<h1>猜大了,猜了"+ ++i +"次</h1>";
+            } else if (parseInt(i1.value) < x) {
+                d1.innerHTML = "<h1>猜小了,猜了"+ ++i +"次</h1>";
+            } else {
+                d1.innerHTML = "<h1>猜对了,猜了"+ ++i +"次"+"，重启下一局</h1>";
+                x = parseInt(Math.random()*100);
+                i = 0;
+            }
+    }
+</script>
+</body>
+</html>

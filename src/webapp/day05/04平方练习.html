@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>平方练习</title>
+</head>
+<body>
+<input type="text" id="i1" placeholder="请输入一个数字">
+<input type="button" value="平方"  onclick="my()">
+<div id="d1">结果:</div>
+<script>
+    function my(){
+        let i = document.getElementById("i1");
+        let d = document.getElementById("d1");
+        d.innerText = Math.pow(i.value,2);
+    }
+</script>
+</body>
+</html>

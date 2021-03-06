@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="i1">
+<input type="button" value="按钮" onclick="myfn()">
+<div id="d1">我是div</div>
+<script>
+    function myfn(){
+        let i= document.getElementById("i1");
+        let d= document.getElementById("d1");
+        if(isNaN(i1.value)){
+            /*不是数字*/
+            d.innerText = "输入必须是数字";
+        }else {
+            /*d.innerText = Math.pow(i.value,3);*/
+            d.innerText = Math.pow(parseFloat(i.value),3);
+        }
+    }
+</script>
+</body>
+</html>

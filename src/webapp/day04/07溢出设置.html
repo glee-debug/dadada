@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>溢出设置</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            /*hidden 解决高度为0的异常 高度为零时 浮动元素会遮盖正常元素但是不会遮盖文本
+            会将文本挤出去*/
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="xy.jpg" alt="xy">
+</div>
+</body>
+</html>

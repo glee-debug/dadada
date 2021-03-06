@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+</head>
+<body>
+<input type="text" id="t1">
+<input type="text" id="t2">
+<input type="button" value="加" onclick="fun(1)">
+<input type="button" value="减" onclick="fun(2)">
+<input type="button" value="乘" onclick="fun(3)">
+<input type="button" value="除" onclick="fun(4)">
+<div id ="d1">结果</div>
+<script>
+    function fun(x){
+        if (isNaN(t1.value) || isNaN(t2.value)){
+            d1.innerText="请输入数字";
+            return;
+        }else {
+            switch (x) {
+                case 1:
+                    d1.innerText = parseInt(t1.value) + parseInt(t2.value);
+                    break;
+                case 2:
+                    d1.innerText = parseInt(t1.value) - parseInt(t2.value);
+                    break;
+                case 3:
+                    d1.innerText = t1.value * t2.value;
+                    break;
+                case 4:
+                    d1.innerText = t1.value / t2.value;
+                    break;
+            }
+        }
+    }
+</script>
+</body>
+</html>
