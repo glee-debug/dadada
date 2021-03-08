@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>状态改变事件</title>
+    <script>
+        /*页面加载完成事件*/
+        onload = function (){
+            d1.innerText = "内容被修改了";
+        }
+    </script>
+</head>
+<body>
+<div id="d1">测试</div>
+<!--onchange值改变事件-->
+<select id="s1" onchange="changefn()">
+    <option value="beijing">北京</option>
+    <option value="shanghai">上海</option>
+    <option value="guanghzou">广州</option>
+</select>
+<!--失去焦点事件-->
+<input type="text" id="myin" onblur="blurfn()">
+<script>
+    function changefn(){
+        alert(s1.value);
+    }
+    function blurfn(){
+        alert(myin.value);
+    }
+    onresize = function (){
+        console.log("窗口尺寸改变");
+    }
+</script>
+</body>
+</html>

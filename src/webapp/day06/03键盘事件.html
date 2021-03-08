@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>键盘事件</title>
+</head>
+<body>
+<input type="text" onkeydown="downfn()" onkeyup="upfn()">
+<script>
+    function downfn(){
+        console.log("键盘按下:"+event.keyCode);
+        if (event.keyCode==13){
+            alert("按了回车");
+        }
+    }
+    function upfn(){
+        console.log("键盘抬起");
+        let char = String.fromCharCode(event.keyCode);
+        console.log("按了:"+char);
+    }
+
+</script>
+</body>
+</html>

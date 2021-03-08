@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+</head>
+<body>
+<input type="button" value="按钮1" onclick="fn1()">
+<input type="button" value="按钮2" id="b1">
+<script>
+    function fn1(){
+        alert("按钮一被点击了");
+    }
+
+    b1.onclick = function(){
+        alert("按钮二被点击了");
+    }
+</script>
+</body>
+</html>

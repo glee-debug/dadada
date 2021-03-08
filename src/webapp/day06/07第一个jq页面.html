@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq页面</title>
+</head>
+<body>
+<input type="text" id="i1">
+<input type="button" value="按钮" id="b1">
+<div id="d1"></div>
+<!--引入jQuery框架-->
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    //给按钮添加点击事件
+    //jquery中的事件名和js中事件名比较，去掉了on
+    $("#b1").click(function (){
+       // alert("按钮被点击了")
+        //d1.innerText = i1.value;
+        $("#d1").text($("#i1").val());
+    });
+</script>
+</body>
+</html>
