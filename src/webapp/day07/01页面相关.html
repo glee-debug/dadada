@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面相关</title>
+</head>
+<body>
+<div>div1</div>
+<div>div2</div>
+<div>div3</div>
+<h2>h2</h2>
+<h3>h3</h3>
+<h4>h4</h4>
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    let h5=$("<h5>我是h5</h5>");
+    /*$("h3").before(h5);//把h5插入到h3前面*/
+    $("h3").after(h5);////把h5插入到h3后面
+    $("h4").remove();//删除元素
+    /*let h1 = $("<h1>我是h1</h1>");
+    $("body").append(h1);
+    let h2 = $("<h1>我是h2</h1>");
+    $("div:last").prepend(h2);*/
+
+
+</script>
+</body>
+</html>

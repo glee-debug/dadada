@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工列表练习</title>
+</head>
+<body>
+<input type="text" placeholder="员工姓名">
+<input type="text" placeholder="工作">
+<input type="text" placeholder="工资">
+<input type="button" value="添加">
+<hr>
+<table border="1">
+    <catption>员工列表</catption>
+    <tr>
+        <th>姓名</th><th>工作</th><th>工资</th><th>操作</th>
+    </tr>
+</table>
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    $("input:eq(3)").click(function (){
+        let newRow = $("<tr></tr>");
+        let name = $("input:eq(0)").val();
+        let job = $("input:eq(1)").val();
+        let salary = $("input:eq(2)").val();
+
+        let arr=[name,job,salary];
+        for (let i=0;i<arr.length;i++){
+            let Col = $("<td></td>");
+            Col.text(arr[i]);
+            newRow.append(Col);
+        }
+        /*
+        let nameCol = $("<td></td>");
+        nameCol.text(name);
+        newRow.append(nameCol);
+        let jobCol = $("<td></td>");
+        jobCol.text(job);
+        salaryCol.text(salary);
+        let salaryCol = $("<td></td>");
+        newRow.append(jobCol);
+        newRow.append(salaryCol);*/
+        let butt = $("<input type='button' value='删除'>");
+        butt.click(function (){
+            newRow.remove();
+        })
+        newRow.append(butt);
+        $("table").append(newRow);
+    })
+</script>
+</body>
+</html>

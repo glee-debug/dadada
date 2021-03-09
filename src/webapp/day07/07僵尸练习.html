@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>僵尸练习</title>
+    <style>
+        body{
+            background-image: url("zombies/bg1.jpg");
+            background-repeat:no-repeat;
+            overflow: hidden;/*解决拖动条抖动问题*/
+        }
+        img{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+
+        }
+    </style>
+</head>
+<body>
+<h3 id="s_h3">成功数量：0</h3>
+<h3 id="f_h3">失败数量：0</h3>
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    let sCount = 0;
+    let fCount = 0;
+    let w = $(window).width();
+    let h = $(window).height();
+    $("body").css("background-size",w+"px "+h+"px");
+    //窗口尺寸改变事件
+    onresize = function (){
+        w = $(window).width();
+        h = $(window).height();
+        $("body").css("background-size",w+"px "+h+"px");
+    }
+    let x=0;
+    setInterval(function (){
+        let x = parseInt(sCount/20);
+        if (x>3){
+            x=3;
+        }
+        let hp = x+1;
+
+        let img = $("<img src='zombies/zomb"+x+".png'/>");
+        img.attr("hp",hp);
+        let top = parseInt(Math.random()*(h-50));
+        img.css({"left":w+"px","top":top+"px"});
+        $("body").append(img);
+        //给图片添加鼠标移入事件
+        img.mouseover(function (){
+            let hp = img.attr("hp");
+            hp--;
+            img.attr("hp",hp);
+            if (hp<=0){
+                img.remove();
+                sCount++;
+                $("#s_h3").text("成功数量："+sCount);
+            }
+        })
+    },500);
+    //开启移动僵尸的定时器
+    setInterval(function (){
+        $("img").each(function (){
+            let left = parseInt($(this).css("left"));
+            left -=5;
+            $(this).css("left",left+"px");
+            if (left<=50){
+                $(this).remove();
+                fCount++;
+                $("#f_h3").text("失败数量："+fCount);
+                if(fCount>=10){
+                    setTimeout(function (){
+                        alert("游戏结束!");
+                        location.reload();
+                    },50)
+                }
+            }
+        })
+    },100);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>好友分组</title>
+</head>
+<body>
+<ul>
+    <li>同事
+        <ul>
+            <li>任正非</li>
+            <li>马化腾</li>
+            <li>马斯克</li>
+        </ul>
+    </li>
+    <li>亲戚
+        <ul>
+            <li>大姨</li>
+            <li>二姨</li>
+            <li>三姨</li>
+        </ul>
+    </li>
+    <li>同学
+        <ul>
+            <li>贾鹏</li>
+            <li>袁木</li>
+            <li>小刘</li>
+        </ul>
+    </li>
+</ul>
+<script src="../js/jquery-1.4.2.js"></script>
+<script>
+    $("li>ul").hide()
+    $("body>ul>li").click(function (){
+        $(this).children().toggle()
+        $(this).siblings().children().hide()
+    })
+</script>
+</body>
+</html>
