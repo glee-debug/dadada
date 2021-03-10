@@ -11,13 +11,31 @@
 <input type="button" value="提交">
 <script src="../js/jquery-1.4.2.js"></script>
 <hr>
-<table>
+<table border="1">
     <tr>
-        <th>员工姓名</th><th>员工姓名</th><th>员工姓名</th><th>员工姓名</th>
+        <th>员工姓名</th><th>工作</th><th>工资</th><th>操作</th>
     </tr>
 </table>
+<script src="../js/jquery-1.4.2.js"></script>
 <script>
-
+    $("input:last").click(function (){
+        let newRow = $("<tr></tr>");
+        let name = $("input:eq(0)").val();
+        let job = $("input:eq(1)").val();
+        let salary = $("input:eq(2)").val();
+        let butt = $("<input type='button' value='删除'>");
+        butt.click(function () {
+            newRow.remove();
+        })
+        let arr = [name,job,salary];
+        for (let i = 0; i < arr.length; i++) {
+            let col = $("<td></td>");
+            col.text(arr[i]);
+            newRow.append(col);
+        }
+        newRow.append(butt);
+        $("table").append(newRow);
+    })
 </script>
 </body>
 </html>
